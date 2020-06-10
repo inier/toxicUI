@@ -1,0 +1,68 @@
+@import '~@/_settings';
+
+$tabs-bar-height: 35px;
+$tabs-bar-txt-color: #f33;
+$tabs-bg-color: #f33;
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+}
+.tabsBar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: $tabs-bar-height;
+    overflow-x: auto;
+    line-height: $tabs-bar-height;
+}
+.tabsBarContent {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 100%;
+}
+.tab {
+    position: relative;
+    flex: 1;
+    padding: 0 10px;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+    &.active {
+        color: $tabs-bar-txt-color;
+        &::before {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $tabs-bg-color;
+            content: '';
+        }
+    }
+}
+.tabsBarActiveFlag {
+    position: relative;
+    bottom: 0;
+    &::before {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $tabs-bg-color;
+        content: '';
+    }
+}
+.tabsContent {
+    display: flex;
+    min-height: 50px;
+}
+.pane {
+    display: none;
+    flex: 1;
+    &.active {
+        display: block;
+    }
+}

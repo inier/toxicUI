@@ -1,0 +1,53 @@
+@import '~@/_settings';
+
+.inputItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: $input-item-height-md;
+    color: $input-label-color;
+    font-size: $input-font-size;
+    label {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        width: 100%;
+        > .label {
+            position: relative;
+            display: inline-block;
+            min-width: $input-label-min-width;
+            max-width: $input-label-max-width;
+            height: $input-item-height-md;
+            margin-right: 1em;
+            line-height: $input-item-height-md;
+            text-align: justify;
+            &::after {
+                display: inline-block;
+                width: 100%;
+                height: 0;
+                overflow: hidden;
+                content: '';
+            }
+            > .required {
+                position: absolute;
+                right: -.5em;
+                color: #f00;
+            }
+        }
+    }
+    input {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        margin-right: 40px;
+        padding: 8px 0 8px 8px;
+        line-height: 24px;
+        border: 0;
+    }
+    &.lg {
+        height: $input-item-height-lg;
+        label {
+            padding: 15px 0;
+        }
+    }
+}

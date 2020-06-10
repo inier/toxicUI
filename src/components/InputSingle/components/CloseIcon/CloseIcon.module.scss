@@ -1,0 +1,36 @@
+/* 关闭图标 */
+.close {
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    z-index: 9;
+    box-sizing: content-box;
+    width: 18px;
+    height: 18px;
+    margin-top: -18px;
+    background-color: #a0a0a0;
+    background-clip: content-box;
+    border: 10px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+        position: absolute;
+        top: 8px;
+        left: 4px;
+        width: 10px;
+        height: 1px;
+        background-color: #fff;
+        content: '';
+    }
+    &::before {
+        transform: rotate(45deg);
+    }
+    &::after {
+        transform: rotate(-45deg);
+    }
+    &:active {
+        background-color: #03a9f5;
+    }
+}

@@ -1,0 +1,67 @@
+@import '~@/_settings';
+$cardPrefixCls: '#{$prefix}card';
+.#{$cardPrefixCls} {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: $fill-base;
+    &:not(#{&}-full) {
+        @include wingBlank(margin);
+    }
+    &#{&}-full {
+    }
+    &#{&}-radius:not(#{&}-full) {
+        @include border-radius();
+    }
+    &-header,
+    &-footer {
+        display: flex;
+        padding: $v-spacing-sm $h-spacing-lg;
+    }
+    &-header {
+        align-items: center;
+        font-size: $font-size-heading;
+        &-content,
+        &-extra {
+            flex: 1;
+        }
+        &-content {
+            display: flex;
+            align-items: center;
+            color: $color-text-base;
+            text-align: left;
+            img {
+                max-width: $card-head-thumb-size;
+                margin-right: $h-spacing-sm;
+            }
+        }
+        &-extra {
+            color: $color-text-caption;
+            font-size: $font-size-heading;
+            text-align: right;
+        }
+        @include hairline(bottom);
+    }
+    &-body {
+        position: relative;
+        flex: 1;
+        min-height: $card-body-min-height;
+        padding-top: $v-spacing-lg;
+        padding-bottom: $v-spacing-sm;
+        color: $color-text-paragraph;
+        font-size: $font-size-subhead;
+        @include wingBlank();
+    }
+    &-footer {
+        color: $color-text-caption;
+        font-size: $font-size-base;
+        &-content,
+        &-extra {
+            flex: 1;
+        }
+        &-extra {
+            text-align: right;
+        }
+        @include hairline(top);
+    }
+}

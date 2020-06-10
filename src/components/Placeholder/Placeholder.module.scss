@@ -1,0 +1,8 @@
+@import '~@/_settings';
+$placeholderPrefixCls: '#{$prefix}placeholder';
+.#{$placeholderPrefixCls} {
+    margin: $placeholder-margin-t 0;
+    color: $placeholder-color;
+    font-size: $placeholder-font-size;
+    text-align: center;
+}

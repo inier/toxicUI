@@ -1,0 +1,40 @@
+@import '~@/_settings';
+.footer {
+    z-index: -1;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    width: 100%;
+    height: $footer-height;
+    color: #929292;
+    background-color: #fff;
+}
+
+.icons {
+    color: #929292;
+    font-size: 26px;
+}
+
+.active {
+    color: $footer-color-active;
+    .icons {
+        color: $footer-color-active;
+    }
+}
+
+.item {
+    flex: 1;
+    line-height: $line-height-single;
+    text-align: center;
+    div {
+        &:first-child {
+            width: 22px;
+            height: 22px;
+            background-size: 103px 100px;
+        }
+        &:last-child {
+            margin: 2px 0;
+            font-size: 10px;
+        }
+    }
+}
