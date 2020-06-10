@@ -3,14 +3,18 @@
 
 module.exports = {
     development: {
+        // NODE_ENV: 'development',
         REACT_APP_HMR: true,
-        GENERATE_SOURCEMAP: true,
         EXTEND_ESLINT: true,
     },
     production: {
-        GENERATE_SOURCEMAP: true,
+        // NODE_ENV: 'production',
         BUNDLE_VISUALIZE: true,
-        STYLELINT: true,
+    },
+    debug: {
+        GENERATE_SOURCEMAP: true, // 开启SOURCEMAP
+        DROP_CONSOLE: false, // 不去除console
+        VCONSOLE: true, // 开启Vconsole
     },
     test: {},
     uat: {

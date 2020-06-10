@@ -90,10 +90,12 @@
   "scripts": {
     "start": "env-cmd -e development react-app-rewired start",
     "build": "env-cmd -e production react-app-rewired build",
+    "debug": "env-cmd -e production,debug react-app-rewired build",
     "test": "env-cmd -e test react-app-rewired test",
     "eject": "react-scripts eject",
     "envcmd:start": "env-cmd -e development node .env-cmd.test.js",
     "envcmd:build": "env-cmd -e production node .env-cmd.test.js",
+    "envcmd:debug": "env-cmd -e production,debug node .env-cmd.test.js",
     "envcmdTest": "npm-run-all envcmd:*",
     "lint": "npm run eslint && npm run stylelint",
     "lint:fix": "npm run eslint:fix && npm run stylelint:fix",
