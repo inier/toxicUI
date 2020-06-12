@@ -1,0 +1,935 @@
+/* stylelint-disable selector-pseudo-element-colon-notation */
+@font-face {
+    font-weight: normal;
+    font-family: 'toxic-icon';
+    font-style: normal;
+    font-display: auto;
+    src: url('./toxic-icon-db1de1.woff2') format('woff2'),
+        url('./toxic-icon-db1de1.woff') format('woff'),
+        url('./toxic-icon-db1de1.ttf') format('truetype');
+}
+
+.toxic-icon {
+    position: relative;
+    display: inline-block;
+    font: normal normal normal 14px/1 'toxic-icon';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+
+    &::before {
+        display: inline-block;
+    }
+}
+
+.toxic-icon-add-o::before {
+    content: '\F000';
+}
+
+.toxic-icon-add-square::before {
+    content: '\F001';
+}
+
+.toxic-icon-add::before {
+    content: '\F002';
+}
+
+.toxic-icon-after-sale::before {
+    content: '\F003';
+}
+
+.toxic-icon-aim::before {
+    content: '\F004';
+}
+
+.toxic-icon-alipay::before {
+    content: '\F005';
+}
+
+.toxic-icon-apps-o::before {
+    content: '\F006';
+}
+
+.toxic-icon-arrow-down::before {
+    content: '\F007';
+}
+
+.toxic-icon-arrow-left::before {
+    content: '\F008';
+}
+
+.toxic-icon-arrow-up::before {
+    content: '\F009';
+}
+
+.toxic-icon-arrow::before {
+    content: '\F00A';
+}
+
+.toxic-icon-ascending::before {
+    content: '\F00B';
+}
+
+.toxic-icon-audio::before {
+    content: '\F00C';
+}
+
+.toxic-icon-award-o::before {
+    content: '\F00D';
+}
+
+.toxic-icon-award::before {
+    content: '\F00E';
+}
+
+.toxic-icon-bag-o::before {
+    content: '\F00F';
+}
+
+.toxic-icon-bag::before {
+    content: '\F010';
+}
+
+.toxic-icon-balance-list-o::before {
+    content: '\F011';
+}
+
+.toxic-icon-balance-list::before {
+    content: '\F012';
+}
+
+.toxic-icon-balance-o::before {
+    content: '\F013';
+}
+
+.toxic-icon-balance-pay::before {
+    content: '\F014';
+}
+
+.toxic-icon-bar-chart-o::before {
+    content: '\F015';
+}
+
+.toxic-icon-bars::before {
+    content: '\F016';
+}
+
+.toxic-icon-bell::before {
+    content: '\F017';
+}
+
+.toxic-icon-bill-o::before {
+    content: '\F018';
+}
+
+.toxic-icon-bill::before {
+    content: '\F019';
+}
+
+.toxic-icon-birthday-cake-o::before {
+    content: '\F01A';
+}
+
+.toxic-icon-bookmark-o::before {
+    content: '\F01B';
+}
+
+.toxic-icon-bookmark::before {
+    content: '\F01C';
+}
+
+.toxic-icon-browsing-history-o::before {
+    content: '\F01D';
+}
+
+.toxic-icon-browsing-history::before {
+    content: '\F01E';
+}
+
+.toxic-icon-brush-o::before {
+    content: '\F01F';
+}
+
+.toxic-icon-bulb-o::before {
+    content: '\F020';
+}
+
+.toxic-icon-bullhorn-o::before {
+    content: '\F021';
+}
+
+.toxic-icon-calender-o::before {
+    content: '\F022';
+}
+
+.toxic-icon-card::before {
+    content: '\F023';
+}
+
+.toxic-icon-cart-circle-o::before {
+    content: '\F024';
+}
+
+.toxic-icon-cart-circle::before {
+    content: '\F025';
+}
+
+.toxic-icon-cart-o::before {
+    content: '\F026';
+}
+
+.toxic-icon-cart::before {
+    content: '\F027';
+}
+
+.toxic-icon-cash-back-record::before {
+    content: '\F028';
+}
+
+.toxic-icon-cash-on-deliver::before {
+    content: '\F029';
+}
+
+.toxic-icon-cashier-o::before {
+    content: '\F02A';
+}
+
+.toxic-icon-certificate::before {
+    content: '\F02B';
+}
+
+.toxic-icon-chart-trending-o::before {
+    content: '\F02C';
+}
+
+.toxic-icon-chat-o::before {
+    content: '\F02D';
+}
+
+.toxic-icon-chat::before {
+    content: '\F02E';
+}
+
+.toxic-icon-checked::before {
+    content: '\F02F';
+}
+
+.toxic-icon-circle::before {
+    content: '\F030';
+}
+
+.toxic-icon-clear::before {
+    content: '\F031';
+}
+
+.toxic-icon-clock-o::before {
+    content: '\F032';
+}
+
+.toxic-icon-clock::before {
+    content: '\F033';
+}
+
+.toxic-icon-close::before {
+    content: '\F034';
+}
+
+.toxic-icon-closed-eye::before {
+    content: '\F035';
+}
+
+.toxic-icon-cluster-o::before {
+    content: '\F036';
+}
+
+.toxic-icon-cluster::before {
+    content: '\F037';
+}
+
+.toxic-icon-column::before {
+    content: '\F038';
+}
+
+.toxic-icon-comment-circle-o::before {
+    content: '\F039';
+}
+
+.toxic-icon-comment-circle::before {
+    content: '\F03A';
+}
+
+.toxic-icon-comment-o::before {
+    content: '\F03B';
+}
+
+.toxic-icon-comment::before {
+    content: '\F03C';
+}
+
+.toxic-icon-completed::before {
+    content: '\F03D';
+}
+
+.toxic-icon-contact::before {
+    content: '\F03E';
+}
+
+.toxic-icon-coupon-o::before {
+    content: '\F03F';
+}
+
+.toxic-icon-coupon::before {
+    content: '\F040';
+}
+
+.toxic-icon-credit-pay::before {
+    content: '\F041';
+}
+
+.toxic-icon-cross::before {
+    content: '\F042';
+}
+
+.toxic-icon-debit-pay::before {
+    content: '\F043';
+}
+
+.toxic-icon-delete::before {
+    content: '\F044';
+}
+
+.toxic-icon-descending::before {
+    content: '\F045';
+}
+
+.toxic-icon-description::before {
+    content: '\F046';
+}
+
+.toxic-icon-desktop-o::before {
+    content: '\F047';
+}
+
+.toxic-icon-diamond-o::before {
+    content: '\F048';
+}
+
+.toxic-icon-diamond::before {
+    content: '\F049';
+}
+
+.toxic-icon-discount::before {
+    content: '\F04A';
+}
+
+.toxic-icon-down::before {
+    content: '\F04B';
+}
+
+.toxic-icon-ecard-pay::before {
+    content: '\F04C';
+}
+
+.toxic-icon-edit::before {
+    content: '\F04D';
+}
+
+.toxic-icon-ellipsis::before {
+    content: '\F04E';
+}
+
+.toxic-icon-empty::before {
+    content: '\F04F';
+}
+
+.toxic-icon-envelop-o::before {
+    content: '\F050';
+}
+
+.toxic-icon-exchange::before {
+    content: '\F051';
+}
+
+.toxic-icon-expand-o::before {
+    content: '\F052';
+}
+
+.toxic-icon-expand::before {
+    content: '\F053';
+}
+
+.toxic-icon-eye-o::before {
+    content: '\F054';
+}
+
+.toxic-icon-eye::before {
+    content: '\F055';
+}
+
+.toxic-icon-fail::before {
+    content: '\F056';
+}
+
+.toxic-icon-failure::before {
+    content: '\F057';
+}
+
+.toxic-icon-filter-o::before {
+    content: '\F058';
+}
+
+.toxic-icon-fire-o::before {
+    content: '\F059';
+}
+
+.toxic-icon-fire::before {
+    content: '\F05A';
+}
+
+.toxic-icon-flag-o::before {
+    content: '\F05B';
+}
+
+.toxic-icon-flower-o::before {
+    content: '\F05C';
+}
+
+.toxic-icon-free-postage::before {
+    content: '\F05D';
+}
+
+.toxic-icon-friends-o::before {
+    content: '\F05E';
+}
+
+.toxic-icon-friends::before {
+    content: '\F05F';
+}
+
+.toxic-icon-gem-o::before {
+    content: '\F060';
+}
+
+.toxic-icon-gem::before {
+    content: '\F061';
+}
+
+.toxic-icon-gift-card-o::before {
+    content: '\F062';
+}
+
+.toxic-icon-gift-card::before {
+    content: '\F063';
+}
+
+.toxic-icon-gift-o::before {
+    content: '\F064';
+}
+
+.toxic-icon-gift::before {
+    content: '\F065';
+}
+
+.toxic-icon-gold-coin-o::before {
+    content: '\F066';
+}
+
+.toxic-icon-gold-coin::before {
+    content: '\F067';
+}
+
+.toxic-icon-good-job-o::before {
+    content: '\F068';
+}
+
+.toxic-icon-good-job::before {
+    content: '\F069';
+}
+
+.toxic-icon-goods-collect-o::before {
+    content: '\F06A';
+}
+
+.toxic-icon-goods-collect::before {
+    content: '\F06B';
+}
+
+.toxic-icon-graphic::before {
+    content: '\F06C';
+}
+
+.toxic-icon-home-o::before {
+    content: '\F06D';
+}
+
+.toxic-icon-hot-o::before {
+    content: '\F06E';
+}
+
+.toxic-icon-hot-sale-o::before {
+    content: '\F06F';
+}
+
+.toxic-icon-hot-sale::before {
+    content: '\F070';
+}
+
+.toxic-icon-hot::before {
+    content: '\F071';
+}
+
+.toxic-icon-hotel-o::before {
+    content: '\F072';
+}
+
+.toxic-icon-idcard::before {
+    content: '\F073';
+}
+
+.toxic-icon-info-o::before {
+    content: '\F074';
+}
+
+.toxic-icon-info::before {
+    content: '\F075';
+}
+
+.toxic-icon-invition::before {
+    content: '\F076';
+}
+
+.toxic-icon-label-o::before {
+    content: '\F077';
+}
+
+.toxic-icon-label::before {
+    content: '\F078';
+}
+
+.toxic-icon-like-o::before {
+    content: '\F079';
+}
+
+.toxic-icon-like::before {
+    content: '\F07A';
+}
+
+.toxic-icon-live::before {
+    content: '\F07B';
+}
+
+.toxic-icon-location-o::before {
+    content: '\F07C';
+}
+
+.toxic-icon-location::before {
+    content: '\F07D';
+}
+
+.toxic-icon-lock::before {
+    content: '\F07E';
+}
+
+.toxic-icon-logistics::before {
+    content: '\F07F';
+}
+
+.toxic-icon-manager-o::before {
+    content: '\F080';
+}
+
+.toxic-icon-manager::before {
+    content: '\F081';
+}
+
+.toxic-icon-map-marked::before {
+    content: '\F082';
+}
+
+.toxic-icon-medal-o::before {
+    content: '\F083';
+}
+
+.toxic-icon-medal::before {
+    content: '\F084';
+}
+
+.toxic-icon-more-o::before {
+    content: '\F085';
+}
+
+.toxic-icon-more::before {
+    content: '\F086';
+}
+
+.toxic-icon-music-o::before {
+    content: '\F087';
+}
+
+.toxic-icon-music::before {
+    content: '\F088';
+}
+
+.toxic-icon-new-arrival-o::before {
+    content: '\F089';
+}
+
+.toxic-icon-new-arrival::before {
+    content: '\F08A';
+}
+
+.toxic-icon-new-o::before {
+    content: '\F08B';
+}
+
+.toxic-icon-new::before {
+    content: '\F08C';
+}
+
+.toxic-icon-newspaper-o::before {
+    content: '\F08D';
+}
+
+.toxic-icon-notes-o::before {
+    content: '\F08E';
+}
+
+.toxic-icon-orders-o::before {
+    content: '\F08F';
+}
+
+.toxic-icon-other-pay::before {
+    content: '\F090';
+}
+
+.toxic-icon-paid::before {
+    content: '\F091';
+}
+
+.toxic-icon-passed::before {
+    content: '\F092';
+}
+
+.toxic-icon-pause-circle-o::before {
+    content: '\F093';
+}
+
+.toxic-icon-pause-circle::before {
+    content: '\F094';
+}
+
+.toxic-icon-pause::before {
+    content: '\F095';
+}
+
+.toxic-icon-peer-pay::before {
+    content: '\F096';
+}
+
+.toxic-icon-pending-payment::before {
+    content: '\F097';
+}
+
+.toxic-icon-phone-circle-o::before {
+    content: '\F098';
+}
+
+.toxic-icon-phone-circle::before {
+    content: '\F099';
+}
+
+.toxic-icon-phone-o::before {
+    content: '\F09A';
+}
+
+.toxic-icon-phone::before {
+    content: '\F09B';
+}
+
+.toxic-icon-photo-o::before {
+    content: '\F09C';
+}
+
+.toxic-icon-photo::before {
+    content: '\F09D';
+}
+
+.toxic-icon-photograph::before {
+    content: '\F09E';
+}
+
+.toxic-icon-play-circle-o::before {
+    content: '\F09F';
+}
+
+.toxic-icon-play-circle::before {
+    content: '\F0A0';
+}
+
+.toxic-icon-play::before {
+    content: '\F0A1';
+}
+
+.toxic-icon-plus::before {
+    content: '\F0A2';
+}
+
+.toxic-icon-point-gift-o::before {
+    content: '\F0A3';
+}
+
+.toxic-icon-point-gift::before {
+    content: '\F0A4';
+}
+
+.toxic-icon-points::before {
+    content: '\F0A5';
+}
+
+.toxic-icon-printer::before {
+    content: '\F0A6';
+}
+
+.toxic-icon-qr-invalid::before {
+    content: '\F0A7';
+}
+
+.toxic-icon-qr::before {
+    content: '\F0A8';
+}
+
+.toxic-icon-question-o::before {
+    content: '\F0A9';
+}
+
+.toxic-icon-question::before {
+    content: '\F0AA';
+}
+
+.toxic-icon-records::before {
+    content: '\F0AB';
+}
+
+.toxic-icon-refund-o::before {
+    content: '\F0AC';
+}
+
+.toxic-icon-replay::before {
+    content: '\F0AD';
+}
+
+.toxic-icon-scan::before {
+    content: '\F0AE';
+}
+
+.toxic-icon-search::before {
+    content: '\F0AF';
+}
+
+.toxic-icon-send-gift-o::before {
+    content: '\F0B0';
+}
+
+.toxic-icon-send-gift::before {
+    content: '\F0B1';
+}
+
+.toxic-icon-service-o::before {
+    content: '\F0B2';
+}
+
+.toxic-icon-service::before {
+    content: '\F0B3';
+}
+
+.toxic-icon-setting-o::before {
+    content: '\F0B4';
+}
+
+.toxic-icon-setting::before {
+    content: '\F0B5';
+}
+
+.toxic-icon-share::before {
+    content: '\F0B6';
+}
+
+.toxic-icon-shop-collect-o::before {
+    content: '\F0B7';
+}
+
+.toxic-icon-shop-collect::before {
+    content: '\F0B8';
+}
+
+.toxic-icon-shop-o::before {
+    content: '\F0B9';
+}
+
+.toxic-icon-shop::before {
+    content: '\F0BA';
+}
+
+.toxic-icon-shopping-cart-o::before {
+    content: '\F0BB';
+}
+
+.toxic-icon-shopping-cart::before {
+    content: '\F0BC';
+}
+
+.toxic-icon-shrink::before {
+    content: '\F0BD';
+}
+
+.toxic-icon-sign::before {
+    content: '\F0BE';
+}
+
+.toxic-icon-smile-comment-o::before {
+    content: '\F0BF';
+}
+
+.toxic-icon-smile-comment::before {
+    content: '\F0C0';
+}
+
+.toxic-icon-smile-o::before {
+    content: '\F0C1';
+}
+
+.toxic-icon-smile::before {
+    content: '\F0C2';
+}
+
+.toxic-icon-star-o::before {
+    content: '\F0C3';
+}
+
+.toxic-icon-star::before {
+    content: '\F0C4';
+}
+
+.toxic-icon-stop-circle-o::before {
+    content: '\F0C5';
+}
+
+.toxic-icon-stop-circle::before {
+    content: '\F0C6';
+}
+
+.toxic-icon-stop::before {
+    content: '\F0C7';
+}
+
+.toxic-icon-success::before {
+    content: '\F0C8';
+}
+
+.toxic-icon-thumb-circle-o::before {
+    content: '\F0C9';
+}
+
+.toxic-icon-thumb-circle::before {
+    content: '\F0CA';
+}
+
+.toxic-icon-todo-list-o::before {
+    content: '\F0CB';
+}
+
+.toxic-icon-todo-list::before {
+    content: '\F0CC';
+}
+
+.toxic-icon-tosend::before {
+    content: '\F0CD';
+}
+
+.toxic-icon-tv-o::before {
+    content: '\F0CE';
+}
+
+.toxic-icon-umbrella-circle::before {
+    content: '\F0CF';
+}
+
+.toxic-icon-underway-o::before {
+    content: '\F0D0';
+}
+
+.toxic-icon-underway::before {
+    content: '\F0D1';
+}
+
+.toxic-icon-upgrade::before {
+    content: '\F0D2';
+}
+
+.toxic-icon-user-circle-o::before {
+    content: '\F0D3';
+}
+
+.toxic-icon-user-o::before {
+    content: '\F0D4';
+}
+
+.toxic-icon-video-o::before {
+    content: '\F0D5';
+}
+
+.toxic-icon-video::before {
+    content: '\F0D6';
+}
+
+.toxic-icon-vip-card-o::before {
+    content: '\F0D7';
+}
+
+.toxic-icon-vip-card::before {
+    content: '\F0D8';
+}
+
+.toxic-icon-volume-o::before {
+    content: '\F0D9';
+}
+
+.toxic-icon-volume::before {
+    content: '\F0DA';
+}
+
+.toxic-icon-wap-home-o::before {
+    content: '\F0DB';
+}
+
+.toxic-icon-wap-home::before {
+    content: '\F0DC';
+}
+
+.toxic-icon-wap-nav::before {
+    content: '\F0DD';
+}
+
+.toxic-icon-warn-o::before {
+    content: '\F0DE';
+}
+
+.toxic-icon-warning-o::before {
+    content: '\F0DF';
+}
+
+.toxic-icon-warning::before {
+    content: '\F0E0';
+}
+
+.toxic-icon-weapp-nav::before {
+    content: '\F0E1';
+}
+
+.toxic-icon-wechat::before {
+    content: '\F0E2';
+}
+
+.toxic-icon-youzan-shield::before {
+    content: '\F0E3';
+}
