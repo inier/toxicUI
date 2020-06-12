@@ -1,6 +1,5 @@
-/**
- * 定义应用路由
- */
+// router.js 定义应用路由
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { BasicLayout, MainLayout, BlankLayout } from '@/layouts';

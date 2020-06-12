@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { BasePage, Header, PageContainer } from '@/components';
 import Navigator from '@/utils/Navigator';
-import blackList from './blacklist';
+import blockList from './blocklist';
 /**
  * @description 带Header的IFrame容器，通过路由跳转过来需要携带title和url两个参数
  * title 如果传入为 ‘noTitle’ 表示没有header
@@ -78,16 +78,19 @@ class IframeView extends Component {
         for (; elem && elem.id !== 'root'; elem = elem.parentNode) {
             if (elem.matches(selector)) return elem;
         }
+
         return null;
     }
     urlInBlackList(url) {
-        for (let i = 0; i < blackList.length; i++) {
-            const item = blackList[i];
+        for (let i = 0; i < blockList.length; i++) {
+            const item = blockList[i];
+
             if (url.indexOf(item) >= 0) {
                 return true;
             }
             continue;
         }
+
         return false;
     }
 

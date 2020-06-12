@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { withRouter, Link } from 'react-router-dom';
-import { CircularProgress, Snackbar, Slide } from '@material-ui/core';
+import { Slide } from '@material-ui/core';
 import { Button, WingBlank, WhiteSpace } from '@/components';
+import ToastAndLoading from '@/components/ToastAndLoading';
 import { Agent as MAgent, ApiUrls } from '@/api';
 import styles from './ListWithApi.module.scss';
 
@@ -65,9 +66,7 @@ class ListWithApi extends Component {
             this.setLoading();
             this.setArticleListCount(res.count);
             this.setArticleList(res.results);
-            setTimeout(() => {
-                this.setToastMsg('数据加载完成！');
-            }, 2000);
+            this.setToastMsg('数据加载完成！');
         });
     }
     render() {
@@ -106,18 +105,7 @@ class ListWithApi extends Component {
                         );
                     })
                 )}
-                {loading && <CircularProgress />}
-                <Snackbar
-                    open={!!toastMsg}
-                    onClose={this.handleClose}
-                    TransitionComponent={SlideTransition}
-                    autoHideDuration={3000}
-                    anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
-                    ContentProps={{
-                        'aria-describedby': 'message-id',
-                    }}
-                    message={<span id="message-id">{toastMsg}</span>}
-                />
+                <ToastAndLoading loading={loading} toastMsg={toastMsg} />                
             </div>
         );
     }

@@ -77,6 +77,6 @@ module.exports = override(
     }),
     // 开启打包速度分析
     // speedMeasure(),
-    BUNDLE_VISUALIZE === 'true' && addBundleVisualizer(),
+    BUNDLE_VISUALIZE === 'true' && addBundleVisualizer()
     // prerender(),
 );

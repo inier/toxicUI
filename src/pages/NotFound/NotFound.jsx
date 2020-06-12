@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BasicNotFound } from '../../components';
+import { BasicNotFound } from '@/components';
 
 export default class NotFound extends Component {
     static displayName = 'NotFound';
@@ -12,7 +12,7 @@ export default class NotFound extends Component {
     render() {
         return (
             <div className="not-found-page">
-                <BasicNotFound style={{ color: '#fff' }} />
+                <BasicNotFound />
             </div>
         );
     }

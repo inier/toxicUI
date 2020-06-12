@@ -16,7 +16,7 @@ class Doc extends Component {
                 <Section>
                     <DemoListWithApi />
                 </Section>
-                <Placeholder msg="没有更多了！" />
+                <Placeholder msg="没有更多了！" />                
             </DemoShow>
         );
     }
