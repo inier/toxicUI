@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Entrance.module.scss';
-import logo from '@/assets/img/logo.svg';
+import logo from '../../assets/img/logo.svg';
 // import '../../demo.es6.js';
 
 class Entrance extends Component {

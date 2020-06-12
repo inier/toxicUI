@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { withRouter, Link } from 'react-router-dom';
-import { Collapse, Demo, List, Placeholder } from '@/components';
+import { Link } from 'react-router-dom';
+import { Collapse, Demo, List, Placeholder } from '../../../../../components';
 import comConfig from '../config.js';
 
 const { DemoShow, Section } = Demo;
@@ -32,7 +32,6 @@ function expandIcon({ isActive }) {
     );
 }
 
-@withRouter
 class CollapseDemo extends Component {
     constructor(props) {
         super(props);

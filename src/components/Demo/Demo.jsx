@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardLite, WhiteSpace, WingBlank } from '@/components';
+import { CardLite, WhiteSpace, WingBlank } from '../../components';
 
 import './pageView.scss';
 

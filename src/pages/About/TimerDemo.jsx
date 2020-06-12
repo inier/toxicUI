@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import { Button, Timer } from '@/components';
+import { Button, Timer } from '../../components';
 
 const styles = {
     content: {
@@ -13,7 +13,6 @@ const styles = {
     },
 };
 
-@withRouter
 class TimerDemo extends Component {
     constructor(props) {
         super(props);
@@ -55,4 +54,4 @@ class TimerDemo extends Component {
     }
 }
 
-export default TimerDemo;
+export default withRouter(TimerDemo);

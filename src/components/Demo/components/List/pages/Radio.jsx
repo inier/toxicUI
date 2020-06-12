@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Radio, RadioGroup, RadioList, Demo } from '@/components';
+import { Radio, RadioGroup, RadioList, Demo } from '../../../../../components';
 const { DemoShow, Section, Block } = Demo;
 
 class RadioDemo extends Component {

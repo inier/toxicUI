@@ -8,7 +8,6 @@ const modalShow = (title, content, handleCancel, handleDone, ...tProps) => (
     <Modal title={title} content={content} onCancel={handleCancel} onDone={handleDone} {...tProps} />
 );
 
-@withRouter
 class TPrompt extends Component {
     constructor(props) {
         super(props);
@@ -61,4 +60,4 @@ TPrompt.propTypes = {
     onDone: PropTypes.func,
 };
 
-export default TPrompt;
+export default withRouter(TPrompt);

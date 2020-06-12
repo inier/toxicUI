@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Demo, DemoListWithApi, Placeholder } from '@/components';
+import { Demo, DemoListWithApi, Placeholder } from '../../components';
 const { DemoShow, Section } = Demo;
 
 class Doc extends Component {

@@ -1,12 +1,14 @@
 # 忽略目录
 build/
 tests/
+dist/
 demo/
-/doc/
-/node_modules/
-/public/
-/.git
-/.vscode
+doc/
+node_modules/
+public/
+.git
+.vscode
+.snapshots/
 
 # node 覆盖率文件
 coverage/
@@ -14,6 +16,3 @@ coverage/
 # 忽略文件
 **/*-min.js
 **/*.min.js
-/src/transport-layer/ResponseCode.js
-config-overrides.js
-serviceWorker.js

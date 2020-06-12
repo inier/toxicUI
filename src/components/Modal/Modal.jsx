@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import { Button } from '@/components';
+import { Button } from '../../components';
 import CloseIcon from './components/CloseIcon';
 import './Modal.scss';
 

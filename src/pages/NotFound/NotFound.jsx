@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BasicNotFound } from '@/components';
+import { BasicNotFound } from '../../components';
 
 export default class NotFound extends Component {
     static displayName = 'NotFound';

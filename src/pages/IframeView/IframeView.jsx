@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import { BasePage, Header, PageContainer } from '@/components';
-import Navigator from '@/utils/Navigator';
+import { BasePage, Header, PageContainer } from '../../components';
+import Navigator from '../../utils/Navigator';
 import blockList from './blocklist';
 /**
  * @description 带Header的IFrame容器，通过路由跳转过来需要携带title和url两个参数
  * title 如果传入为 ‘noTitle’ 表示没有header
  */
-@withRouter
 class IframeView extends Component {
     constructor(props) {
         super(props);
@@ -118,4 +117,4 @@ class IframeView extends Component {
     }
 }
 
-export default IframeView;
+export default withRouter(IframeView);

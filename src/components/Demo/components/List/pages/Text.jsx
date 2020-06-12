@@ -1,5 +1,5 @@
 import React from 'react';
-import { Demo } from '@/components';
+import { Demo } from '../../../../../components';
 const { DemoShow, Section, Block } = Demo;
 
 export default () => (

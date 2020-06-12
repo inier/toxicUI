@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Modal, Demo } from '@/components';
+import { Button, Modal, Demo } from '../../../../../components';
 const { DemoShow, Section, Block } = Demo;
 
 class ModalDemo extends Component {

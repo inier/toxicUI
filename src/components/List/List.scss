@@ -1,4 +1,4 @@
-@import '~@/_settings';
+@import '../../styles/settings';
 $listPrefixCls: '#{$prefix}list';
 $list-ripple-transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1),
     color .2s cubic-bezier(.4, 0, .2, 1);

@@ -4,15 +4,24 @@
 node_modules/
 /.pnp
 .pnp.js
+**/node_modules/
+.snapshots/
+*.min.js
+.idea/
+.vscode/
+.vs/
+**/.DS_Store
 
 # testing
-/coverage
+coverage
+/storybook-static
 
 # production
-/build
-/dist
-/vscode
-/es/
+build
+dist
+demo
+vscode
+es/
 !components/**/__tests__/*.js
 _data
 _site
@@ -32,7 +41,6 @@ Thumbs.db
 .svn/
 .stylelintcache
 .docz
-.DS_Store
 .env.local
 .env.development.local
 .env.test.local

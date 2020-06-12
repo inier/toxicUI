@@ -1,5 +1,5 @@
 import React from 'react';
-import { Demo, Icon } from '@/components';
+import { Demo, Icon } from '../../../../../components';
 const { DemoShow, Section, Block } = Demo;
 
 export default () => (

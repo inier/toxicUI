@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs, Demo } from '@/components';
+import { Tabs, Demo } from '../../../../../components';
 
 const { DemoShow, Section } = Demo;
 

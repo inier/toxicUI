@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Toast, Demo } from '@/components';
+import { Button, Toast, Demo } from '../../../../../components';
 const { DemoShow, Section, Block } = Demo;
 
 class ToastDemo extends Component {

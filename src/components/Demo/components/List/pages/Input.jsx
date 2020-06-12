@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { InputSingle, Demo } from '@/components';
-import { isMicroMessenger, getIOSVersion } from '@/utils';
+import { InputSingle, Demo } from '../../../../../components';
+import { isMicroMessenger, getIOSVersion } from '../../../../../utils';
 
 const { DemoShow, Section } = Demo;
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import { NotFound } from '@/pages';
+import { NotFound } from '../../pages';
 
 /**
  * 渲染路由组件

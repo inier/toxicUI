@@ -1,9 +1,9 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { BasePage, Header, PageContainer } from '@/components';
+import { BasePage, Header, PageContainer } from '../../components';
 // import BasicLayoutHoc from './BasicLayoutHoc';
-import { getPageTitle } from '@/utils';
-import routerData from '@/routerConfig';
+import { getPageTitle } from '../../utils';
+import routerData from '../../routerConfig';
 import MainRoutes from './MainRoutes';
 
 export default withRouter(({ location, history }) => {

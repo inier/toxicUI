@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import TimeDemo from './TimerDemo';
-import { logo, avatar } from '@/assets';
+import { logo, avatar } from '../../assets';
 import styles from './About.module.scss';
 
 class About extends Component {

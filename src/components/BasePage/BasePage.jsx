@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Prompt } from '..';
-import { isWebView } from '@/utils';
+import { isWebView } from '../../utils';
 import styles from './BasePage.module.scss';
 
 class BasePage extends Component {

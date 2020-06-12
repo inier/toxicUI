@@ -1,4 +1,4 @@
-@import '~@/_settings';
+@import '../../styles/settings';
 $placeholderPrefixCls: '#{$prefix}placeholder';
 .#{$placeholderPrefixCls} {
     margin: $placeholder-margin-t 0;
