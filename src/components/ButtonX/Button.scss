@@ -1,4 +1,5 @@
 @import '../../styles/settings';
+
 // btn margin计算
 @mixin btn-margin {
     margin-right: $btn-group-margin-v;
@@ -72,8 +73,9 @@
 
 /* 标准btn样式 */
 
-$btnPrefixCls: '#{$prefix}btn';
-.#{$btnPrefixCls} {
+$baseClass: '#{$prefix}-btn';
+
+.#{$baseClass} {
     position: relative;
     box-sizing: border-box;
     color: $btn-color-text;
@@ -166,7 +168,7 @@ $btnPrefixCls: '#{$prefix}btn';
     &#{&}-error,
     &#{&}-important,
     &#{&}-link {
-        &.#{$btnPrefixCls}:not(.#{$btnPrefixCls}-fill) {
+        &.#{$baseClass}:not(.#{$baseClass}-fill) {
             @include hairlineClean;
         }
     } // btn-icon
@@ -196,7 +198,7 @@ $btnPrefixCls: '#{$prefix}btn';
         > .txt {
             color: $btn-color-progressed-text;
         }
-        .#{$btnPrefixCls}-inner {
+        .#{$baseClass}-inner {
             position: absolute;
             top: 0;
             left: 0;
@@ -231,7 +233,7 @@ $btnPrefixCls: '#{$prefix}btn';
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
-        .#{$btnPrefixCls},
+        .#{$baseClass},
         [role='button'],
         button {
             &:not(:first-child) {

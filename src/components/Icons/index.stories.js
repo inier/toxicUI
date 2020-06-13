@@ -4,7 +4,7 @@ import IconsConfig from '../../assets/icons/toxic-icons/config';
 import '../../styles/stories.scss';
 
 export default {
-  title: 'Icons',
+  title: 'Toxic UI/A·基础 Basis/Icons',
   component: Icon
 };
 

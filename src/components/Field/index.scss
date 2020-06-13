@@ -1,9 +1,13 @@
-@import '../../styles/colors.scss';
-@import '../../styles/spacing.scss';
-@import '../../styles/variables.scss';
-@import '../../styles/typography.scss';
+@import '../../styles/settings';
 
 $baseClass: 'toxic-field';
+
+@mixin field-label {
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-text;
+  font-weight: 300;
+}
 
 .#{$baseClass} {
   @include field-label;

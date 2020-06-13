@@ -152,7 +152,7 @@ class ListItem extends Component {
 }
 
 ListItem.defaultProps = {
-    prefixCls: 'list',
+    prefixCls: 'toxic-list',
     align: 'middle',
     error: false,
     multipleLine: false,
@@ -171,7 +171,7 @@ ListItem.propTypes = {
     onClick: PropTypes.func,
 };
 Brief.defaultProps = {
-    prefixCls: 'list',
+    prefixCls: 'toxic-list',
 };
 Brief.propTypes = {
     prefixCls: PropTypes.string,

@@ -1,6 +1,8 @@
 @import '../../styles/settings';
-$cardPrefixCls: '#{$prefix}card';
-.#{$cardPrefixCls} {
+
+$baseClass: '#{$prefix}card';
+
+.#{$baseClass} {
     position: relative;
     display: flex;
     flex-direction: column;

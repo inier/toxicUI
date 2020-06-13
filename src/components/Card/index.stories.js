@@ -1,14 +1,13 @@
 import React from 'react';
 import { Card, CardLite } from '.';
-import { Button, Demo } from '../../components';
+import { Button } from '../../components';
+import { DemoShow, SectionCard, Section, Block } from '@ozo/demo';
 import '../../styles/stories.scss';
 
 export default {
-    title: 'Card',
+    title: 'Toxic UI/C·模块 Module/Card',
     component: Card,
 };
-
-const { DemoShow, Section } = Demo;
 
 export const CardLiteDemo = () => (
     <DemoShow>

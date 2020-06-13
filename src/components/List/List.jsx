@@ -23,7 +23,7 @@ const List = ({ prefixCls, children, className, style, renderHeader, renderFoote
     );
 };
 List.defaultProps = {
-    prefixCls: 'list',
+    prefixCls: 'toxic-list',
 };
 List.propTypes = {
     prefixCls: PropTypes.string,

@@ -1,8 +1,8 @@
 # 单选列表（移动端）
 
-@changan/radios
+@ozo/radio
 
-单选列表 for 移动端
+单选列表for移动端
 
 ## Radio 组件用法
 
@@ -23,34 +23,33 @@ Radio 组件包括 RadioGroup、Radio 两个子组件，需要配合使用。
 
 1.  在需要引用 Radio 的页面或组件中引入组件
 
-```plain
+```
 import { RadioGroup, Radio } from "../../components/Radio";
 ```
 
 2.  在需要引用 Radio 的页面或组件中添加状态：
 
-```plain
+```
 this.state = {
     selectedValue : 'React'
 }
 ```
-
 > mobx 等状态管理放到对应的 store
 
 3.  在需要引用 Radio 的页面或组件中添加选中 Radio 子项后的回调方法
 
-```plain
-handleChange(event){
+```
+handleChange(value, index, event){
     console.log('change');
-    console.log(event);
-    this.setState({selectedValue:event});
+    console.log(value);
+    this.setState({selectedValue:value});
 }
 ```
 
 4.  jsx 部分引入以下结构
 
-```plain
-<RadioGroup name="platform" selectedValue={this.state.selectedValue} onChange={(event)=>{this.handleChange(event)}}>
+```
+<RadioGroup name="platform" selectedValue={this.state.selectedValue} onChange={this.handleChange}}>
     <Radio value="1" disabled="true">React</Radio>
     <Radio value="2">VUE</Radio>
     <Radio value="3">jQuery</Radio>
@@ -58,6 +57,7 @@ handleChange(event){
 ```
 
 > Radio 组件的位置可以不是直接子元素。
+
 
 ## API
 

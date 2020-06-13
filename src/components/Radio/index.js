@@ -1,6 +1,5 @@
-import RadioGroup from './RadioGroup';
 import Radio from './Radio';
-import RadioLite from './RadioLite';
+import RadioGroup from './RadioGroup';
 import RadioList from './RadioList';
 
-export { RadioGroup, Radio, RadioLite, RadioList };
+export { Radio, RadioGroup,  RadioList };

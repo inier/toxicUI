@@ -3,8 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Icon.scss';
 
-const Icon = ({ baseClass, name = '', size, style, className }) => {
-    let tName = name;
+const Icon = ({ baseClass, type = '', size, style, className }) => {
+    let tName = type;
     if (tName && tName.indexOf('icon-') === -1) {
         tName = `icon-${tName}`;
     }
@@ -29,7 +29,7 @@ Icon.propTypes = {
     // 字体图标库的基础类
     baseClass: PropTypes.string,
     // 字体图标类名
-    name: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
     size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
     style: PropTypes.object,
     // 字体图标额外样式类名

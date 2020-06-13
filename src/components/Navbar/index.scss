@@ -1,9 +1,24 @@
-@import '../../styles/colors.scss';
-@import '../../styles/spacing.scss';
-@import '../../styles/variables.scss';
-@import '../../styles/typography.scss';
+@import '../../styles/settings';
 
-$baseClass: 'toxic-navbar';
+$baseClass: '#{$prefix}-navbar';
+
+@mixin nav-title {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: $dark-text;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 60%;
+}
+
+@mixin nav-link {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 21px;
+  color: $info;
+}
 
 nav.#{$baseClass} {
   position: relative;

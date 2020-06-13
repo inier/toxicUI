@@ -8,7 +8,10 @@
   },
   "description": "Mobile UI Components built in React.",
   "main": "dist/index.js",
-  "module": "dist/index.modern.js",
+  "esmodule": "dist/foo.module.js",
+  "module": "dist/index.es.js",
+  "umd:main": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js",
   "types": "dist/index.d.ts",
   "source": "src/index.tsx",
   "engines": {
@@ -18,8 +21,8 @@
     "dist"
   ],
   "scripts": {
-    "start": "microbundle-crl watch --no-compress --format modern,cjs --css-modules false",
-    "build": "microbundle-crl --no-compress --format modern,cjs --css-modules false",
+    "start": "microbundle-crl watch --no-compress --css-modules false",
+    "build": "microbundle-crl --no-compress --css-modules false",
     "prepublish": "run-s build",
     "test": "run-s test:unit test:lint test:build",
     "test:build": "run-s build",
@@ -46,7 +49,6 @@
     "@alifd/theme-toxic": "^0.1.2",
     "@material-ui/core": "^4.9.7",
     "@ozo/lazy-loader": "^1.0.4",
-    "balloon-css": "^1.0.4",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
     "rc-collapse": "^1.11.8",
@@ -59,8 +61,10 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@ice/spec": "^1.0.1",
+    "@ozo/demo": "^1.0.1",
     "@ozo/mixins-sass": "^1.1.7",
     "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-docs": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.0.1",
@@ -88,6 +92,7 @@
     "lint-md": "^0.2.0",
     "lint-md-cli": "^0.1.2",
     "lint-staged": "^10.0.9",
+    "lodash-es": "^4.17.15",
     "microbundle-crl": "^0.13.10",
     "node-sass": "^4.13.1",
     "npm-run-all": "^4.1.5",
@@ -96,13 +101,14 @@
     "prettier": "^2.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.1",
     "serve": "^11.3.2",
     "stylelint": "^13.2.1"
   },
   "peerDependencies": {
-    "react": "^16.3.0",
-    "lodash-es": "^4.x"
+    "lodash-es": "^4.x",
+    "react": "^16.8.0"
   },
   "browserslist": {
     "production": [
@@ -117,8 +123,7 @@
     ]
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "echo 'Pre-commit checks......' && lint-staged",      
+    "hooks": {      
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },

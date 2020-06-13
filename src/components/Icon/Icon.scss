@@ -1,6 +1,9 @@
+@import '../../assets/icons/toxic-icons/index.scss';
 @import '../../styles/settings';
 
-.icon {
+$baseClass: '#{$prefix}-icon';
+
+#{$baseClass}{
     &-xs {
         font-size: $icon-size-xs;
     }

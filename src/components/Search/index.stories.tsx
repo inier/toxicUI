@@ -4,7 +4,7 @@ import '../../styles/stories.scss';
 import Button from '../Button';
 
 export default {
-  title: 'Search',
+  title: 'Toxic UI/C·模块 Module/Search',
   component: Search
 };
 

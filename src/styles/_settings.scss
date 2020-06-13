@@ -1,7 +1,7 @@
-// //== 全局样式
-// @import '~@ozo/mixins-sass/src/basis/_variables.scss';
-// //== mixins
-// @import '~@ozo/mixins-sass/src/mixins.scss';
-
+//== 引入theme主题变量
+@import '~@alifd/theme-toxic/variables.scss';
 //== 全局样式和mixins
 @import '~@ozo/mixins-sass/src/_settings.scss';
+@import './variables';
+//== 重置全局样式
+@import './_reset.scss';

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import shortid from 'shortid';
 import CloseIcon from './components/CloseIcon';
 import styles from './InputSingle.module.scss';
+import { isMicroMessenger, getIOSVersion } from '../../utils';
 
 /**
  * 输入组件
@@ -29,7 +30,23 @@ class InputSingle extends Component {
         this.textInput = React.createRef();
     }
 
+    componentDidMount() {
+        // 解决 iOS 12+系统，微信和企业微信中，软键盘顶起页面后隐藏时不回弹的问题
+        if (isMicroMessenger() && getIOSVersion() > '12') {
+            // 组件挂载时，注册focusout事件
+            document.body.addEventListener('focusout', () => {
+                window.scrollTo(0, 0);
+            });
+        }
+    }
+
     componentWillUnmount() {
+        // 组件卸载时，移除focusout事件
+        if (isMicroMessenger() && getIOSVersion() > '12') {
+            document.body.removeEventListener('focusout', () => {
+                window.scrollTo(0, 0);
+            });
+        }
         clearTimeout(this.debounceTimeout);
         this.debounceTimeout = null;
     }

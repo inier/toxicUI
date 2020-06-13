@@ -3,7 +3,7 @@ import Navbar from '.';
 import '../../styles/stories.scss';
 
 export default {
-  title: 'Navbar',
+  title: 'Toxic UI/C·模块 Module/Navbar',
   component: Navbar
 };
 

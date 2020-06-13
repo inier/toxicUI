@@ -1,0 +1,44 @@
+//== 全局常量
+$prefix: 'toxic';
+
+//-- color
+$default: #fff;
+$primary: #07c160;
+$info: #1989fa;
+$danger: #ee0a24;
+$warning: #ff976a;
+
+$black: #000;
+$grey: #969799;
+
+$dark-text: #323233;
+$light-text: #fff;
+$grey-text: #ebedf0;
+$grey-background: #f7f8fa;
+
+$placeholder: #c8c9cc;
+$word-limit: #656566;
+
+//-- spacing
+$space-sm: 4px;
+$space-md: 8px;
+$space-lg: 16px;
+
+$padding-sm: 15px;
+
+//== 组件变量
+// loaders
+$loader-size: 20px;
+$loader-animation-duration: 2s;
+$loader-circular-duration: 1.4s;
+
+// buttons
+$button-height: 44px;
+$button-disabled-opacity: 0.5;
+
+// navbar
+$navbar-height: 56px;
+
+// icons
+$icon-container-size: 32px;
+$icon-dot-size: 8px;

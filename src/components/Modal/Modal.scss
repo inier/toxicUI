@@ -1,7 +1,8 @@
 @import '../../styles/settings';
-$modalPrefixCls: '#{$prefix}modal';
 
-.#{$modalPrefixCls} {
+$baseClass: '#{$prefix}-modal';
+
+.#{$baseClass} {
     position: absolute;
     top: 0;
     right: 0;
@@ -55,12 +56,12 @@ $modalPrefixCls: '#{$prefix}modal';
         }
     }
     &.show {
-        .#{$modalPrefixCls}-mask {
+        .#{$baseClass}-mask {
             visibility: visible;
             opacity: 1;
             transition: all .5s;
         }
-        .#{$modalPrefixCls}-content {
+        .#{$baseClass}-content {
             &.layer {
                 bottom: 0;
                 transition: bottom .5s;
@@ -99,7 +100,7 @@ $modalPrefixCls: '#{$prefix}modal';
         }
     }
     .layer {
-        .#{$modalPrefixCls}-closeIcon {
+        .#{$baseClass}-closeIcon {
             top: 1px;
             right: 32px;
             left: auto;

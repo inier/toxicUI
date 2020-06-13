@@ -1,6 +1,8 @@
 @import '../../styles/settings';
-$collapsePrefixCls: '#{$prefix}collapse';
-.#{$collapsePrefixCls} {
+
+$baseClass: '#{$prefix}-collapse';
+
+.#{$baseClass} {
     position: relative;
     &:not(#{&}-full) {
         @include wingBlank(margin);
@@ -11,15 +13,15 @@ $collapsePrefixCls: '#{$prefix}collapse';
         @include border-radius();
     }
     &#{&}-gutter {
-        > #{$collapsePrefixCls}-item:not(:first-child) {
+        > #{$baseClass}-item:not(:first-child) {
             margin-top: 10px;
         }
     }
     &-anim-active {
-        transition: all .2s ease-out;
+        transition: all 0.2s ease-out;
     }
     > #{&}-item {
-        > .#{$collapsePrefixCls}-header {
+        > .#{$baseClass}-header {
             position: relative;
             height: $collapse-head-height;
             color: $color-text-base;
@@ -37,7 +39,7 @@ $collapsePrefixCls: '#{$prefix}collapse';
                 background-position: 50% 50%;
                 background-size: contain;
                 transform: rotate(90deg);
-                transition: transform .2s ease;
+                transition: transform 0.2s ease;
                 @include singleBlank(right, margin);
                 @include encoded-svg-bg(right);
             }
@@ -50,10 +52,10 @@ $collapsePrefixCls: '#{$prefix}collapse';
             @include hairline(bottom);
             @include ellipsis;
         }
-        > .#{$collapsePrefixCls}-content {
+        > .#{$baseClass}-content {
             overflow: hidden;
             background-color: $fill-base;
-            .#{$collapsePrefixCls}-content-box {
+            .#{$baseClass}-content-box {
                 position: relative;
                 color: $color-text-paragraph;
                 font-size: $font-size-subhead;
@@ -62,13 +64,13 @@ $collapsePrefixCls: '#{$prefix}collapse';
                 }
                 @include hairline(bottom);
             }
-            &.#{$collapsePrefixCls}-content-inactive {
+            &.#{$baseClass}-content-inactive {
                 display: none;
             }
         }
     }
     > #{&}-item-disabled {
-        > .#{$collapsePrefixCls}-header {
+        > .#{$baseClass}-header {
             color: $collapse-head-color-disabled;
             background-color: $collapse-head-bg-color-disabled;
             cursor: not-allowed;

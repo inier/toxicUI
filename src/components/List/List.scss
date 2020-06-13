@@ -1,8 +1,11 @@
 @import '../../styles/settings';
-$listPrefixCls: '#{$prefix}list';
-$list-ripple-transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1),
-    color .2s cubic-bezier(.4, 0, .2, 1);
-.#{$listPrefixCls} {
+
+$baseClass: '#{$prefix}-list';
+
+$list-ripple-transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+.#{$baseClass} {
     &-header {
         box-sizing: border-box;
         width: 100%;
@@ -22,14 +25,14 @@ $list-ripple-transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-co
         background-color: $fill-base;
         a:not(:last-child),
         div:not(:last-child) {
-            .#{$listPrefixCls}-line {
+            .#{$baseClass}-line {
                 @include hairline(bottom);
             }
         }
     }
 }
 
-.#{$listPrefixCls}-item {
+.#{$baseClass}-item {
     position: relative;
     display: flex;
     align-items: center;
@@ -39,7 +42,7 @@ $list-ripple-transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-co
     vertical-align: middle;
     background-color: $fill-base;
     transition: background-color 200ms;
-    .#{$listPrefixCls}-ripple {
+    .#{$baseClass}-ripple {
         position: absolute;
         display: inline-block;
         overflow: hidden;
@@ -50,34 +53,34 @@ $list-ripple-transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-co
         cursor: pointer;
         transition: $list-ripple-transition;
         will-change: box-shadow, transform;
-        &.#{$listPrefixCls}-ripple-animate {
-            background-color: hsla(0, 0%, 62%, .2);
+        &.#{$baseClass}-ripple-animate {
+            background-color: hsla(0, 0%, 62%, 0.2);
             animation: ripple 1s linear;
         }
     }
     &#{&}-top {
-        .#{$listPrefixCls}-line {
+        .#{$baseClass}-line {
             align-items: flex-start;
-            .#{$listPrefixCls}-arrow {
+            .#{$baseClass}-arrow {
                 margin-top: 2px;
             }
         }
     }
     &#{&}-middle {
-        .#{$listPrefixCls}-line {
+        .#{$baseClass}-line {
             align-items: center;
         }
     }
     &#{&}-bottom {
-        .#{$listPrefixCls}-line {
+        .#{$baseClass}-line {
             align-items: flex-end;
         }
     }
     &#{&}-error {
-        .#{$listPrefixCls}-line {
-            .#{$listPrefixCls}-extra {
+        .#{$baseClass}-line {
+            .#{$baseClass}-extra {
                 color: #f50;
-                .#{$listPrefixCls}-brief {
+                .#{$baseClass}-brief {
                     color: #f50;
                 }
             }
@@ -87,9 +90,9 @@ $list-ripple-transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-co
         background-color: $fill-tap;
     }
     &#{&}-disabled {
-        .#{$listPrefixCls}-line {
-            .#{$listPrefixCls}-content,
-            .#{$listPrefixCls}-extra {
+        .#{$baseClass}-line {
+            .#{$baseClass}-content,
+            .#{$baseClass}-extra {
                 color: $color-text-disabled;
             }
         }
@@ -101,7 +104,7 @@ $list-ripple-transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-co
     }
 
     /* list左图片显示 */
-    .#{$listPrefixCls}-thumb {
+    .#{$baseClass}-thumb {
         &:first-child {
             margin-right: $h-spacing-lg;
         }
@@ -109,7 +112,7 @@ $list-ripple-transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-co
             margin-left: $h-spacing-md;
         }
     }
-    .#{$listPrefixCls}-line {
+    .#{$baseClass}-line {
         position: relative;
         display: flex;
         flex: 1;
@@ -118,7 +121,7 @@ $list-ripple-transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-co
         overflow: hidden;
 
         /* list左侧主内容 */
-        .#{$listPrefixCls}-content {
+        .#{$baseClass}-content {
             flex: 1;
             padding-top: $v-spacing-sm;
             padding-bottom: $v-spacing-sm;
@@ -130,7 +133,7 @@ $list-ripple-transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-co
         }
 
         /* list右补充内容 */
-        .#{$listPrefixCls}-extra {
+        .#{$baseClass}-extra {
             flex-basis: 36%;
             padding-top: $v-spacing-sm;
             padding-bottom: $v-spacing-sm;
@@ -140,12 +143,12 @@ $list-ripple-transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-co
             text-align: right;
             @include ellipsis();
         }
-        .#{$listPrefixCls}-title {
+        .#{$baseClass}-title {
             @include ellipsis();
         }
 
         /* 辅助性文字 */
-        .#{$listPrefixCls}-brief {
+        .#{$baseClass}-brief {
             margin-top: $v-spacing-sm;
             color: $color-text-caption;
             font-size: $font-size-subhead;
@@ -154,7 +157,7 @@ $list-ripple-transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-co
         }
 
         /* list右侧箭头 */
-        .#{$listPrefixCls}-arrow {
+        .#{$baseClass}-arrow {
             display: block;
             width: $icon-size-xs;
             height: $icon-size-xs;
@@ -178,20 +181,20 @@ $list-ripple-transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-co
         }
         &-multiple {
             padding: $v-spacing-md $h-spacing-lg $v-spacing-md 0;
-            .#{$listPrefixCls}-content {
+            .#{$baseClass}-content {
                 padding-top: 0;
                 padding-bottom: 0;
             }
-            .#{$listPrefixCls}-extra {
+            .#{$baseClass}-extra {
                 padding-top: 0;
                 padding-bottom: 0;
             }
         }
         &-wrap {
-            .#{$listPrefixCls}-content {
+            .#{$baseClass}-content {
                 white-space: normal;
             }
-            .#{$listPrefixCls}-extra {
+            .#{$baseClass}-extra {
                 white-space: normal;
             }
         }

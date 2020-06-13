@@ -3,7 +3,7 @@ import Rate from '../Rate';
 import '../../styles/stories.scss';
 
 export default {
-  title: 'Rate',
+  title: 'Toxic UI/B·区块 Block/Rate',
   component: Rate
 };
 

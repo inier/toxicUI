@@ -3,7 +3,7 @@ import Button from '.';
 import '../../styles/stories.scss';
 
 export default {
-  title: 'Button',
+  title: 'Toxic UI/A·基础 Basis/Button',
   component: Button
 };
 

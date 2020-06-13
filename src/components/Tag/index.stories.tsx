@@ -4,7 +4,7 @@ import Tag from './';
 import '../../styles/stories.scss';
 
 export default {
-  title: 'Tag',
+  title: 'Toxic UI/B·区块 Block/Tag',
   component: Tag
 };
 

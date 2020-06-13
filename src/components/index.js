@@ -14,6 +14,3 @@ export * from './layout';
 
 // template 模板组件
 export * from './template';
-
-// demo 演示相关
-export * from './Demo/index';

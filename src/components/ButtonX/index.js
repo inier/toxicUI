@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Button.scss';
 import { isString } from 'lodash-es';
-import { Icon } from '..';
+import Icon from '../Icon';
 
 const rxTwoCNChar = /^[\u4e00-\u9fa5]{2}$/;
 const isTwoCNChar = rxTwoCNChar.test.bind(rxTwoCNChar);
@@ -95,7 +95,7 @@ const Button = ({
 };
 
 Button.defaultProps = {
-    prefixCls: 'btn',
+    prefixCls: 'toxic-btn',
     type: '',
     size: 'md',
     noRadius: false,

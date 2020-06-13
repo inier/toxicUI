@@ -1,0 +1,32 @@
+@import '../../styles/settings';
+
+$baseClass: '#{$prefix}-divider';
+
+$divider-color: #e5e5e5;
+
+.#{$baseClass} {
+    display: inline-block;
+
+    &.horizontal {
+        height: 1px;
+        border-top: 1px solid $divider-color;
+    }
+    &.vertical {
+        width: 1px;
+        line-height: 1em;
+        background-color: $divider-color;
+    }
+    /* -------- 线中间夹文字效果 -------- */
+    &.side-line {
+        width: 100%;
+        @include side-line(1px, 0.5em, $divider-color);
+    }
+    &.side-line-dash {
+        width: 100%;
+        @include side-line(1px, 0.5em, $divider-color, dashed);
+    }
+    &.side-line-double {
+        width: 100%;
+        @include side-line(1px, 0.5em, $divider-color, solid, false, true);
+    }
+}
