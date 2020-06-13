@@ -4,15 +4,15 @@
     font-family: 'toxic-icon';
     font-style: normal;
     font-display: auto;
-    src: url('./toxic-icon-db1de1.woff2') format('woff2'),
-        url('./toxic-icon-db1de1.woff') format('woff'),
-        url('./toxic-icon-db1de1.ttf') format('truetype');
+    src: url('https://img.yzcdn.cn/vant/vant-icon-db1de1.woff2') format('woff2'),
+        url('https://img.yzcdn.cn/vant/vant-icon-db1de1.woff') format('woff'),
+        url('https://img.yzcdn.cn/vant/vant-icon-db1de1.ttf') format('truetype');
 }
 
 .toxic-icon {
     position: relative;
     display: inline-block;
-    font: normal normal normal 14px/1 'toxic-icon';
+    font: normal normal normal 14px/1 'toxic-icon', sans-serif;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
