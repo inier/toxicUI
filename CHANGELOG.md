@@ -1,4 +1,14 @@
-## 1.0.1 (2020-06-13)
+## [1.0.2](https://github.com/inier/toxicUI/compare/v1.0.1...v1.0.2) (2020-06-15)
+
+
+### Bug Fixes
+
+* 更新 ([12f7fd8](https://github.com/inier/toxicUI/commit/12f7fd8))
+* 更新日志 ([adbbe8d](https://github.com/inier/toxicUI/commit/adbbe8d))
+
+
+
+## [1.0.1](https://github.com/inier/toxicUI/compare/ceb8359...v1.0.1) (2020-06-13)
 
 
 ### Bug Fixes
